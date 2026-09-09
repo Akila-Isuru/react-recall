@@ -12,6 +12,11 @@ import Props from "./components/Props";
 import ChildrenProps from "./components/ChildrenProps";
 import QuickExercise from "./components/QuickExercise";
 import Counter from "./components/Counter";
+import WelcomeMessage from "./components/WelcomeMessage";
+import LoginButton from "./components/LoginButton";
+import LoginStatus from "./components/LoginStatus";
+import UserBadge from "./components/UserBadge";
+import Notification from "./components/Notification";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -24,6 +29,11 @@ createRoot(document.getElementById("root")!).render(
     {/* <Props /> */}
     {/* <ChildrenProps /> */}
     {/* <QuickExercise /> */}
-    <Counter />
+    {/* <Counter /> */}
+    {/* <WelcomeMessage /> */}
+    {/* <LoginButton/> */}
+    {/* <LoginStatus /> */}
+    {/* <UserBadge /> */}
+    <Notification />
   </StrictMode>,
 );
