@@ -18,6 +18,9 @@ import LoginStatus from "./components/LoginStatus";
 import UserBadge from "./components/UserBadge";
 import Notification from "./components/Notification";
 import NotificationTest from "./components/NotificationTest";
+import InputExample from "./components/InputExample";
+import GreetingInput from "./components/GreetingInput";
+import UserForm from "./components/UserForm";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -36,6 +39,9 @@ createRoot(document.getElementById("root")!).render(
     {/* <LoginStatus /> */}
     {/* <UserBadge /> */}
     {/* <Notification /> */}
-    <NotificationTest />
+    {/* <NotificationTest /> */}
+    {/* <InputExample /> */}
+    {/* <GreetingInput /> */}
+    <UserForm />
   </StrictMode>,
 );
