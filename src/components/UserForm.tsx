@@ -1,18 +1,66 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Form } from "react-router-dom";
+// import { Form } from "react-router-dom";
+
+// type FormData = {
+//   name: string;
+//   email: string;
+// };
+
+// function UserForm() {
+//   const [formData, setFormData] = useState<FormData>({
+//     name: "",
+//     email: "",
+//   });
+
+//   const handleChanage = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     const { name, value } = e.target;
+
+//     setFormData({
+//       ...formData,
+//       [name]: value,
+//     });
+//   };
+//   return (
+//     <div className="p-5 flex flex-col w-150">
+//       <input
+//         className="border border-gray-300 rounded-lg mr-2"
+//         type="text"
+//         name="name"
+//         value={formData.name}
+//         onChange={handleChanage}
+//         placeholder="UserName"
+//       />
+//       <input
+//         className="border border-gray-300 rounded-lg mr-2"
+//         type="text"
+//         name="email"
+//         value={formData.email}
+//         onChange={handleChanage}
+//         placeholder="Email"
+//       />
+
+//       <h4>Live Data:</h4>
+//       <p>Username : {formData.name}</p>
+//       <p>Email : {formData.email}</p>
+//     </div>
+//   );
+// }
+
+// export default UserForm;
 
 type FormData = {
-  name: string;
+  userName: string;
   email: string;
 };
 
-function UserForm() {
+export default function UserForm() {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
+    userName: "",
     email: "",
   });
 
-  const handleChanage = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleOnChnage = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     setFormData({
@@ -20,30 +68,30 @@ function UserForm() {
       [name]: value,
     });
   };
+
   return (
-    <div className="p-5 flex flex-col w-150">
+    <div className="m-3 flex flex-col mb-3">
       <input
-        className="border border-gray-300 rounded-lg mr-2"
+        className="border border-gray-300 w-100 rounded-lg mb-3"
         type="text"
-        name="name"
-        value={formData.name}
-        onChange={handleChanage}
-        placeholder="UserName"
+        name="userName"
+        value={formData.userName}
+        onChange={handleOnChnage}
+        placeholder="Enter your name :"
       />
       <input
-        className="border border-gray-300 rounded-lg mr-2"
+        className="border border-gray-300 w-100 rounded-lg"
         type="text"
         name="email"
         value={formData.email}
-        onChange={handleChanage}
-        placeholder="Email"
+        onChange={handleOnChnage}
+        placeholder="Ente your email :"
       />
 
-      <h4>Live Data:</h4>
-      <p>Username : {formData.name}</p>
-      <p>Email : {formData.email}</p>
+      <h4>
+        <p>UserName : {formData.userName}</p>
+        <p>Email :{formData.email}</p>
+      </h4>
     </div>
   );
 }
-
-export default UserForm;

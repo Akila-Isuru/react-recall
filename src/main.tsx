@@ -21,6 +21,7 @@ import NotificationTest from "./components/NotificationTest";
 import InputExample from "./components/InputExample";
 import GreetingInput from "./components/GreetingInput";
 import UserForm from "./components/UserForm";
+import ProfileForm from "./components/ProfileForm";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -42,6 +43,7 @@ createRoot(document.getElementById("root")!).render(
     {/* <NotificationTest /> */}
     {/* <InputExample /> */}
     {/* <GreetingInput /> */}
-    <UserForm />
+    {/* <UserForm /> */}
+    <ProfileForm />
   </StrictMode>,
 );
