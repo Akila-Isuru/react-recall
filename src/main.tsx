@@ -25,6 +25,7 @@ import ProfileForm from "./components/ProfileForm";
 import UserList from "./components/UserList";
 import TaskList from "./components/TaskList";
 import DynamicTaskList from "./components/DynamicTaskList";
+import GuestList from "./components/GuestList";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -50,6 +51,7 @@ createRoot(document.getElementById("root")!).render(
     {/* <ProfileForm /> */}
     {/* <UserList /> */}
     {/* <TaskList /> */}
-    <DynamicTaskList />
+    {/* <DynamicTaskList /> */}
+    <GuestList />
   </StrictMode>,
 );
