@@ -22,6 +22,9 @@ import InputExample from "./components/InputExample";
 import GreetingInput from "./components/GreetingInput";
 import UserForm from "./components/UserForm";
 import ProfileForm from "./components/ProfileForm";
+import UserList from "./components/UserList";
+import TaskList from "./components/TaskList";
+import DynamicTaskList from "./components/DynamicTaskList";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -44,6 +47,9 @@ createRoot(document.getElementById("root")!).render(
     {/* <InputExample /> */}
     {/* <GreetingInput /> */}
     {/* <UserForm /> */}
-    <ProfileForm />
+    {/* <ProfileForm /> */}
+    {/* <UserList /> */}
+    {/* <TaskList /> */}
+    <DynamicTaskList />
   </StrictMode>,
 );
