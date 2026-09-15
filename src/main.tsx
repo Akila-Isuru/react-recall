@@ -26,6 +26,9 @@ import UserList from "./components/UserList";
 import TaskList from "./components/TaskList";
 import DynamicTaskList from "./components/DynamicTaskList";
 import GuestList from "./components/GuestList";
+import UseEffect from "./components/UseEffect";
+import PostList from "./components/PostList";
+import UserFethcer from "./components/UserFetcher";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -52,6 +55,9 @@ createRoot(document.getElementById("root")!).render(
     {/* <UserList /> */}
     {/* <TaskList /> */}
     {/* <DynamicTaskList /> */}
-    <GuestList />
+    {/* <GuestList /> */}
+    {/* <UseEffect/> */}
+    {/* <PostList /> */}
+    <UserFethcer />
   </StrictMode>,
 );
