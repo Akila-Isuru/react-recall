@@ -74,6 +74,9 @@ export default function GuestList() {
     setGuests([...gusets, newGuset]);
     setNameInput("");
   };
+  const handleDeleteGuest = (idToDelete: number) => {
+    setGuests(gusets.filter((guest) => guest.id !== idToDelete));
+  };
   return (
     <div>
       <input
@@ -90,6 +93,7 @@ export default function GuestList() {
             <p>
               {guest.id}- {guest.name}
             </p>
+            <button onClick={() => handleDeleteGuest(guest.id)}>Delete</button>
           </li>
         ))}
       </ul>
