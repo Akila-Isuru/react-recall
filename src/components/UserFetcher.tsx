@@ -22,7 +22,7 @@ export default function UserFethcer() {
     return <p>Users Loading.....!</p>;
   }
   return (
-    <div>
+    <div className="p-3">
       <h2>Users</h2>
       <ul>
         {users.map((user) => (

@@ -29,6 +29,10 @@ import GuestList from "./components/GuestList";
 import UseEffect from "./components/UseEffect";
 import PostList from "./components/PostList";
 import UserFethcer from "./components/UserFetcher";
+import UserFetcherAdvanced from "./components/UserFetcherAdvanced";
+import TodoListFetcher from "./components/TodoListFetcher";
+import BoxProperties from "./components/BoxProperties";
+import Colors from "./components/colors";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -58,6 +62,10 @@ createRoot(document.getElementById("root")!).render(
     {/* <GuestList /> */}
     {/* <UseEffect/> */}
     {/* <PostList /> */}
-    <UserFethcer />
+    {/* <UserFethcer /> */}
+    {/* <UserFetcherAdvanced /> */}
+    {/* <TodoListFetcher /> */}
+    {/* <BoxProperties /> */}
+    <Colors />
   </StrictMode>,
 );
