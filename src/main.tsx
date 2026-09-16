@@ -33,6 +33,7 @@ import UserFetcherAdvanced from "./components/UserFetcherAdvanced";
 import TodoListFetcher from "./components/TodoListFetcher";
 import BoxProperties from "./components/BoxProperties";
 import Colors from "./components/colors";
+import TransitionButton from "./components/TransitionButton";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -66,6 +67,7 @@ createRoot(document.getElementById("root")!).render(
     {/* <UserFetcherAdvanced /> */}
     {/* <TodoListFetcher /> */}
     {/* <BoxProperties /> */}
-    <Colors />
+    {/* <Colors /> */}
+    <TransitionButton />
   </StrictMode>,
 );
